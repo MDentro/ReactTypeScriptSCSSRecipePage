@@ -1,0 +1,16 @@
+@use "../../constants/variables.scss";
+.ingredients-container {
+  @include variables.container;
+  border-bottom: 1px solid variables.$LightGrey;
+  p {
+    @include variables.title;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li::marker {
+    color: variables.$nutmeg;
+  }
+}

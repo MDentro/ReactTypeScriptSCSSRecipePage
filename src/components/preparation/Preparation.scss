@@ -1,0 +1,22 @@
+@use "../../constants/variables.scss";
+
+.preparation-container {
+  background-color: variables.$RoseWhite;
+  @include variables.container;
+
+  padding: 20px;
+  p {
+    color: variables.$DarkRaspberry;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  span {
+    color: variables.$DarkCharcoal;
+    font-weight: 600;
+  }
+}

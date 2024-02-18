@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+  --viewportWidth: calc(100vw - var(--scrollbarWidth));
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  max-width: var(--viewportWidth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding-inline-start: 20px;
+  box-sizing: border-box;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+  .page-container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 900px;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 40px;
+  }
+}

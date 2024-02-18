@@ -1,0 +1,29 @@
+@use "../../constants/variables.scss";
+.instructions-container {
+  @include variables.container;
+  border-bottom: 1px solid variables.$LightGrey;
+
+  p {
+    @include variables.title;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  li {
+    list-style-type: decimal;
+    padding-left: 20px;
+    
+  }
+
+  li::marker {
+    color: variables.$nutmeg;
+    font-weight: 600;
+  }
+
+  span {
+    color: variables.$DarkCharcoal;
+    font-weight: 600;
+  }
+}

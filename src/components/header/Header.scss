@@ -1,0 +1,19 @@
+@use "../../constants/variables.scss";
+.header-container {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+
+  .introduction-container {
+    @include variables.container;
+  }
+
+  div {
+    width: 80%;
+  }
+  p {
+    color: variables.$WengeBrown;
+  }
+}

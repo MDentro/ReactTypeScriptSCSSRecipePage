@@ -1,0 +1,34 @@
+@use "../../constants/variables.scss";
+
+.nutrition-container {
+  @include variables.container;
+
+  p:first-of-type {
+    @include variables.title;
+  }
+
+  span {
+    color: black;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  ul {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  li {
+    display: flex;
+  }
+
+  .value {
+    color: variables.$nutmeg;
+    font-weight: 700;
+  }
+
+  ul:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid variables.$LightGrey;
+  }
+}
